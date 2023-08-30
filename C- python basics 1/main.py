@@ -202,3 +202,54 @@
 # print(fullName)
 
 # Type Conversion
+
+#NOTE  this is example of data type
+# int -> 3
+
+# str -> "Hi" 'Hi'
+
+# bool -> true false
+
+# float -> 1.5 2.25
+
+# list -> students = ['alireza', 'mohsen', 'sara']
+
+# tuple -> ages = (1, 2, 3)
+
+# set -> {14 , 15, true, false, 'alireza'}
+
+# dict -> {name: "alireza", lastName: "fazeli"}
+
+
+# numOne = 2.5
+# numTwo = 4
+
+# print(numOne * numTwo)
+
+#NOTE with type() method we can know what type is it
+
+# userName = "alireza"
+# money = 3.5
+# age = 18
+# married = True
+
+# numOne = 3.4
+# numTwo = 3.6
+
+# # print(round(3.5))
+# print(abs(-3))
+
+# print(type(married))
+# print(3 + 3.0)
+# print(2 ** 4)
+# print(7 / 3.8)
+# print(7 // 3)
+
+# print(11 % 2
+
+
+#NOTE convert to binary
+print(bin(10))
+
+#NOTE convert binary to int
+print(int("0b1010" , 2))
