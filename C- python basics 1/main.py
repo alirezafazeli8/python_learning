@@ -357,6 +357,86 @@
 #
 # print(msg)
 
-msg = "My name is \"alireza\". \t I live in iran.\nBye."
+# msg = "My name is \"alireza\". \t I live in iran.\nBye."
 
-print(msg)
+# print(msg)
+
+#NOTE formatted string
+
+# name = 'Alireza'
+# age = 18
+
+# # welcome_message = "Hi " + name + " ." + " You are " + str(age)
+# # welcome_message = f'Hi {name} . You are {age} years old.' # this is for python 3
+
+# # .format() method for python 2
+# welcome_message = "Hi {1} . You are {0}".format(name, age)
+
+# print(welcome_message)
+
+#NOTE exercise
+# name = "Cindy"
+# balance = 50
+
+# #1
+# user_balance = f'Hello {name}, your balance is {balance}.'
+# print(user_balance)
+
+# #2
+# user_balance = 'Hello ' + name + ', your balance is ' +  str(balance) + '.'
+# print(user_balance)
+
+# #3
+# user_balance = 'Hello {}, your balance is {}.'.format(name, balance)
+# print(user_balance)
+# #4
+# user_balance = 'Hello {new_name}, your balance is {new_balance}.'.format(new_name="Cindy", new_balance=50)
+# print(user_balance)
+
+# name = "Alireza"
+    #   0123456
+    
+# print(name[0])
+# print(name[1])
+# print(name[2])
+# print(name[3])
+# print(name[4])
+# print(name[5])
+# print(name[6])
+# print(name[7]) #Error
+
+# start:stop
+# print(name[3:7])
+
+# name = "Sara Mohseni"
+
+# start:stop:stepover
+# print(name[0:12:2])
+
+# start without stop
+# print(name[:5])
+
+# # step over without start and stop
+# print(name[::3])
+
+# print(name[-7:])
+
+# reverse the string
+
+# numbers = "0123456789"
+# name = "Sara Mohseni"
+
+# print(numbers[::-1])
+# print(name[::-1])
+
+name = "I am PYTHON"
+
+print(name[1:4])
+print(name[1:])
+print(name[0:])
+print(name[1:])
+print(name[-1])
+print(name[-3])
+print(name[0:-4])
+print(name[::-1])
+print(name[::])
