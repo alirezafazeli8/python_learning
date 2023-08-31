@@ -249,7 +249,114 @@
 
 
 #NOTE convert to binary
-print(bin(10))
+# print(bin(10))
 
-#NOTE convert binary to int
-print(int("0b1010" , 2))
+# #NOTE convert binary to int
+# print(int("0b1010" , 2))
+
+
+# NOTE camel case
+# userName = "alireza"
+
+# NOTE Snake case
+# user_name = "mohsen" 
+# print(user_name)
+
+# print
+# for
+# while
+
+# print = "alireza"
+
+# print(print)
+
+# PI = 3.14
+# __AGE = 25
+# # username = ""
+
+# print(__PI)
+
+# a = 1
+# b = 2
+# c = 3
+
+# a, b, c = 1, 2, 3
+
+# print(a, b, c)
+
+# some = 5
+# # some = some + 5
+# some += 5
+
+# print(some)
+
+# user_name = "AlirezaFazeli"
+# last_name = "saghol"
+# password = "1234"
+# login_rule = '''
+#     Hello To Iranian
+#     my name is GHod GHod
+    
+#     i want to kill GHool
+
+# '''
+
+# full_name = user_name + last_name
+
+# print(user_name, password)
+# print(login_rule)
+# print(full_name)
+
+# user_name = "alireza" + 88
+
+# print(user_name)
+
+# my_age_str = '18'
+# my_age = 18
+
+# int_to_str = str(my_age)
+# some_to_int = int(my_age_str)
+
+# print(type(some_to_int))
+
+# weather = "today is \"cloudy\"  \t but \t not. \n in this \n part"
+# print(weather)
+
+# user_input = input("Pleas Enter Your Number :")
+# user_input = int(user_input)
+#
+# conver_to_bin = bin(user_input)
+#
+# print(f'youre binary number is {conver_to_bin}')
+#
+# user_input_real_num = input("Pleas Enter Your Binary :")
+# convert_to_int = int(user_input_real_num, 2)
+#
+# print(f"Your Real Number is : {convert_to_int}")
+
+# PI = 3.14
+# __PI__ = 3.14
+#
+# a, b, c = 0 , 1, 2
+#
+# print(a ,b ,c)
+#
+# age = 18
+# year = 1402
+# birth = year - age
+#
+# print(birth)
+
+# msg = '''
+#
+#     hello
+#     my names alireza
+#     bye.
+#
+# '''
+#
+# print(msg)
+
+msg = "My name is \"alireza\". \t I live in iran.\nBye."
+
+print(msg)
