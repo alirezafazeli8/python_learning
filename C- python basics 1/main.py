@@ -429,14 +429,41 @@
 # print(numbers[::-1])
 # print(name[::-1])
 
-name = "I am PYTHON"
+# name = "I am PYTHON"
 
-print(name[1:4])
-print(name[1:])
-print(name[0:])
-print(name[1:])
-print(name[-1])
-print(name[-3])
-print(name[0:-4])
-print(name[::-1])
-print(name[::])
+# print(name[1:4])
+# print(name[1:])
+# print(name[0:])
+# print(name[1:])
+# print(name[-1])
+# print(name[-3])
+# print(name[0:-4])
+# print(name[::-1])
+# print(name[::])
+
+# # NOTE immutibilaty
+# name = "Alireza"
+# # name[0] = "z"
+# name = "z" + name[1:]
+# print(name)
+
+# name = "alireza"
+# age = 18
+
+# full_info = f'Hello {name}, You are {age}.' # introduced in python 3
+
+# introduced in python 2
+# full_info = "Hi {} . You are {} .".format(name, age)
+# full_info = "Hi {1} . You are {0} .".format(name, age)
+# full_info = "Hi {nameTwo} . You are {ageTwo} .".format(nameTwo="mohsen", ageTwo=50)
+
+# print(full_info)
+
+# print(name[::-1])
+# name[0] = "z"
+# name = "z" + name[1:]
+# print(name)
+
+# students = ["alireza", "mohsen", "sara"]
+
+# print(len(students))
