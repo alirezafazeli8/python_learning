@@ -467,3 +467,28 @@
 # students = ["alireza", "mohsen", "sara"]
 
 # print(len(students))
+
+# msg = "to be or not to be"
+# msg = msg.upper()
+# msg = msg.lower()
+# msg.upper()
+# name = "alireza"
+
+# print(msg.capitalize())
+# print(name.capitalize())
+# print(msg.find("to"))
+# print(msg.replace("be", "aa"))
+# print(msg.split()[0])
+
+# print(bool(""))
+# print(bool("dasdsad"))
+# print(bool(None))
+
+#NOTE list section
+# students = ["Alireza", "mohsen", "sara", "amir"]
+# # print(f'students 1 : {students[0]}')
+# # print(f'students 2 : {students[1]}')
+# # print(f'students 3 : {students[2]}')
+
+# # List slicing
+# print
