@@ -492,3 +492,36 @@
 
 # # List slicing
 # print
+
+# greet = "Hi Alireza. Welcome"
+# name = "SARA"
+
+# # Upper method
+# print(f'Upper :  {greet.upper()}')
+
+# # lower method
+# print(f'Lower : {name.lower()}')
+
+# # capitalize 
+# print(f'Capitalize : {"hello guys. how are you".capitalize()}')
+
+# find method
+# print(f'Find Mehtod : {greet.find("Alireza")}')
+
+# print(greet[3:len("Alireza") + 3])
+
+# sample_text = "to be or not to be"
+# sample_text = sample_text.replace("to", "😂")
+# sample_text = sample_text.replace("😂", "😡")
+# sample_text = sample_text.replace("be", "💧")
+
+# print(sample_text)
+
+# print(f'{bool("")} {bool("False")} {bool("false")}')
+# print(bool(False))
+
+# print("H" + ("I" * 4) + "e")
+
+# students_name = ["Alireza", 1, "Saleh", 2,  "dariush", 3]
+# print(students_name[0])
+# print(students_name[::-1][::-2])
