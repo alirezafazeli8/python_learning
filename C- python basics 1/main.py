@@ -525,3 +525,173 @@
 # students_name = ["Alireza", 1, "Saleh", 2,  "dariush", 3]
 # print(students_name[0])
 # print(students_name[::-1][::-2])
+
+# students = ["alireza", "mohsen", "sara"]
+
+# msg_school = f"""
+
+#     student list : 
+#         {students[0]} || password : {"*" * len(students[0])}
+#         {students[1]} || password : {"*" * len(students[1])}
+#         {students[2]} || password : {"*" * len(students[2])}
+        
+#     student length : {len(students)}
+
+# """
+
+# print(msg_school)
+
+# studentsOne = ["alireza", "mohsen", "sara", "jaber", "jj", "kian"]
+
+# studentsTwo = studentsOne[:]
+# studentsTwo[0] = "mohammad"
+
+# print("students One : ", studentsOne)
+# print("students Two : ", studentsTwo)
+
+# print(students)
+
+# print(f'{students}')
+
+# string = "Hello"
+# string1 = "a" + string[1:]
+
+# print(string1)
+
+
+# number_one = [1, 2, 3, 4, 5]
+# number_two = number_one
+# number_two[0] = 0
+# print(number_one)
+
+# Alireza Fazeli
+
+
+# matrix = [
+    
+#     [1, 0, 1],
+#     [0, 1, 0],
+#     [1, 0, 1]
+    
+# ]
+
+# print(f"""
+#             {matrix[0]}
+#             {matrix[1]}
+#             {matrix[2]}
+#       """)
+
+
+# NOTE list method
+
+# basket = [1, 2, 3, 4]
+# basket.append(20)
+# print(basket)
+# print(type(basket))
+
+# students = ["sara", "ali", "mohsen"]
+
+# new_student = input(f"""
+#                         these are our students :
+#                         {students}
+                        
+#                         new student name :
+#                     """)
+
+# students.append(new_student)
+# print(f'''
+#         {students[-1]} is added to list.
+        
+#         new list : {students}
+      
+#       ''')
+
+
+# NOTE insert list method
+
+# students = ["sara", "ali", "mohsen"]
+# city = ["neka", "sari", "behshahr", "tehran"]
+# # students.insert(2, "javad")
+
+
+# # NOTE extend list method
+
+# print(students)
+# students.extend(city)
+# # print(students)
+
+# new_val = [1, 2]
+# new_val.extend([3, 4])
+
+# print(new_val)
+# new_students = students.pop()
+# print(new_students)
+# students = ["sara", "ali", "mohsen"]
+# # students.pop()
+# students.pop(2)
+# print(students)
+
+# user_name = "Alireza"
+# user_age = 18
+# quote = "To be or not be in the iran."
+
+# user_name = user_name.upper()
+# user_name = user_name.lower()
+# user_name = user_name.capitalize()
+
+# # print(user_name)
+
+# # print(quote.find("be"))
+# # print(quote[quote.find("be"):quote.find("be") + len("be")])
+
+# quote = quote.replace("be", "Alireza")
+
+# print(quote)
+
+# full_info = "User Name : {user_age} - User Age : {0}".format(user_name, user_age = 20)
+
+# print(full_info)
+
+# user_name_new = "z" + user_name[1::]
+
+# print(user_name_new)
+
+# users = ["alireza", "mohsen", "sara", "niaz"]
+
+# print(len(user_name))
+# print(len(users))
+
+# print("Hello world")
+
+# students = ["Sara" , "Ali", "morteza", "reza"]
+# students_matrix  = ["A", ["reza", "kian"], "b", ["mohanna", "sara"]]
+
+
+# students.extend(students_matrix)
+
+# print(students)
+
+# # new student
+# students.append("Javad")
+
+# # insert
+# students.insert(0, "new")
+
+
+# print(students)
+
+# students[0] = "Gholam"
+
+
+# print(students)
+
+# print(f"""
+#         class a : {students_matrix[1]}
+#         best student a : {students_matrix[1][1]}
+
+#         class b : {students_matrix[3]}
+#         best student b : {students_matrix[3][0]}
+      
+#       """)
+
+# print(students[-2:])
