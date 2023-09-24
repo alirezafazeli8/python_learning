@@ -695,3 +695,96 @@
 #       """)
 
 # print(students[-2:])
+
+
+# numbers = [1, 2,"sara", 3, 2, 1, 4, 5, "alireza"]
+
+
+
+# numbers.pop()
+# numbers.pop(2)
+# numbers.pop(2)
+
+# numbers
+
+# numbers.remove(5)
+# numbers.remove("sara")
+# numbers.remove("alireza")
+
+# numbers.clear()
+
+# print(numbers)
+
+# print(numbers.index(7 , 2))
+
+# NOTE in keword
+# numbers = [1, 2,"sara", 3, 2, 1, 4, 5, "alireza"]
+
+# greet = "to be or not to be"
+
+# my_obj = {"name" : "alireza"}
+
+# # print("to" in greet)
+# # print("sra" in numbers)
+# # print("name" in my_obj)
+
+
+# print(numbers.count('alireza'))
+
+# numbers = [1, 2, 3, 2, 1, 4, 5]
+
+# # numbers.sort()
+
+# # # print(numbers)
+# # new_val = sorted(numbers)
+# # new_val.append("new")
+
+# # print(new_val)
+
+# new_num = numbers.copy()
+
+
+# new_num[0] = 8
+
+# print(numbers)
+
+# names = ["sra", "ali", "kian"]
+# names.reverse()
+
+# print(names)
+
+# #NOTE range
+# print(list(range(100)))
+
+# x = range(0 , 6)
+# print(list(x))
+
+# students = ["Alireza", "sara", "hossein"]
+
+# # alireza + sara + hossein
+
+# print(" + ".join(students))
+
+# #NOTE list unpacking
+# a, b, *all_number, c, d  = [1, 2, 3, 4, 5]
+
+# # x = basket[0]
+# print(a)
+# print(all_number)
+# print(c , d)
+# # print(d)
+
+#NOTE Dictionary
+user_info = {
+    "user_name": "james_cameron",
+    "age": 18,
+    "friends": ["sara", "mohsen", "ali"]
+}
+
+# print(user_info["user_name"])
+
+print(user_info.get("ageOne", "dont exist"))
+
+human = dict(name="alireza", lastname = 'fazeli')
+
+print(human)
