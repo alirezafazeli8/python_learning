@@ -775,16 +775,134 @@
 # # print(d)
 
 #NOTE Dictionary
-user_info = {
-    "user_name": "james_cameron",
-    "age": 18,
-    "friends": ["sara", "mohsen", "ali"]
-}
+# user_info = {
+#     "user_name": "james_cameron",
+#     "age": 18,
+#     "friends": ["sara", "mohsen", "ali"]
+# }
 
-# print(user_info["user_name"])
+# # print(user_info["user_name"])
 
-print(user_info.get("ageOne", "dont exist"))
+# print(user_info.get("ageOne", "dont exist"))
 
-human = dict(name="alireza", lastname = 'fazeli')
+# human = dict(name="alireza", lastname = 'fazeli')
 
-print(human)
+# print(human)
+
+
+# first_name = "alireza"
+# last_name = "fazeli"
+# full_name = f"Your Full Name Is : {first_name} - {last_name}"
+
+# print(full_name) 
+
+# # خروجی
+# # Your Full Name Is : alireza - fazeli
+
+# print(round(3.5), round(3.4))پ
+# print((23 ** 2) / 6 * 4 - (3 + 2))
+
+# number_one = 100
+# number_two = '100'
+# user_name = 'alireza fazeli'
+# is_married = True
+
+
+# print(type(number_one)) # خروجی : int
+# print(type(number_two)) # خروجی : str
+# print(type(user_name)) # خروجی : str
+# print(type(is_married))  # خروجی : bool
+
+
+# number_one = 100
+# number_two = str(number_one)
+# print(number_two)
+# print(type(number_two))
+
+
+# number_one = "100"
+# number_two = int(number_one)
+# print(number_two) # خروجی : 100
+# print(type(number_two)) # حروجی : int
+
+# music  = "کفتر کاکل به سر \t وای فای"
+# print(music)
+
+# music = " Nazi naz kon ke nazet \n ye sarve naze "
+# print(music)
+# name = "alireza fazeli"
+# print(name[0:7])
+
+# quote = "123456789"
+
+# print(quote[0:6:2])
+
+
+# name = "alireza"
+# name[0] = "z" # امکان تغییر ساختار یک استرینگ وجود نداره !
+# print(name)
+
+
+# name = "alireza"
+# last_name = "fazeli"
+# greet = "Ye Toop Daram Ghel ghelie !"
+
+# print(len(name))
+# print(len(last_name))
+# print(len(greet))
+
+# get_input = input("داداچ یه چیزی بنویس : ")
+# calc_input = len(get_input)
+
+# show_msg = f"""
+
+# داداچ متن تو این بود : {get_input}
+# تعداد حروفات انقدره : {calc_input}
+
+# نه جان من حال کردی؟  💣
+
+
+# """
+
+# print(show_msg)
+
+# name = "alireza"
+# letter = "j"
+
+# print(name.upper()) # خروجی : ALIREZA
+# print(letter.upper()) # خروجی : J
+
+
+# name = "james clear"
+# print(name.capitalize())
+
+
+# greet = "to be or not to be"
+# print(greet.find("be"))
+
+
+# greet = "to be or not to be"
+# print(greet.find("not", 8, 12))
+
+# greet = "to be or not to be"
+# greet = greet.replace("be", "duck")
+# print(greet)
+
+# is_married = True
+# print(is_married) #  خروجی : True
+
+# is_married = False 
+# print(is_married) # خروجی : False
+
+# print("*" * 10)
+
+# get_username = input("لطفا نام کاربری را وارد کنید : ")
+# get_password = input("لطفا پسورد خود را وارد کنید : ")
+# hide_password = "*" * len(get_password)
+# greet_to_user = f"""
+
+# سلام {get_username} پسورد {hide_password} در سیستم وارد شد. 😊
+
+# """
+
+# print(greet_to_user)
