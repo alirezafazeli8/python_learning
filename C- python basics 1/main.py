@@ -906,3 +906,163 @@
 # """
 
 # print(greet_to_user)
+
+
+
+# students = ["alireza", "ghasem", "mohsen", "reza"]
+
+# students.append("sara")
+# # students.insert("javad", 2)
+# students.insert(3, "javad")
+
+# new_students = ["max", "james"]
+
+# students.extend(new_students)
+
+# remove should get item name in arg
+# students.remove("alireza")
+# students.remove("mohsen")
+
+
+
+
+# if students.remove("dasdad") == None:
+#     print("item is removed")
+# else:
+#     print("failed")
+
+# print(students)
+
+# print(students)
+
+# students.pop()
+# students.pop()
+# students.pop()
+# students.pop(0)
+
+# students.clear()
+
+
+# print(students)
+
+# students = ["alireza", "ghasem", "mohsen", "reza", "alireza"]
+
+# print(students.count("alireza"))
+# print(students.count("mohsen"))
+# print("to be or not to be".count("be"))
+# students.sort()
+
+# show_sort = [5 , 4, 3, 2, 1]
+# show_sort.sort()
+
+# print(show_sort)
+
+# # print(students.index("alireza", 3, 5))
+
+# print("jamal" in students)
+
+# print("alireza" in "alireza")
+
+
+# students_one = ["alireza", "sara", "mohsen"]
+# # students_two = students_one.copy()
+# # students_two.extend(["jamal", "reza"])
+
+# # print(students_one)
+# # print(students_two)
+
+# numbers = [ 5, 6, 9 ,1, 0]
+
+# students_one.reverse()
+# numbers.reverse()
+
+# print(students_one)
+# print(numbers)
+
+# my_rng = range(10000)
+
+# for i in my_rng:
+#     print(f"Happ Programmer day 1")
+#     print(f"Happ Programmer day 0")
+
+# tell = ["🐔", "🥚"]
+# tell.sort()
+# print(tell)
+
+# cars = ["benz", "bmw", "audi", "nissan"]
+# cars.sort()
+# new_cars = " 🚘 ".join(cars)
+# print(f"""
+#     out shop car list : 
+    
+    
+#     {new_cars}
+      
+#       """)
+
+# car_one, car_two, *other_cars = ["benz", "bmw", "audi", "nissan"]
+
+# show_cars = f"""
+
+#     special cars : {car_one} - {car_two}
+#     other cars : {" - ".join(other_cars)}
+
+# """
+
+# print(show_cars)
+
+# car_one = cars[0
+# ]
+
+# books_page = {
+#     "book_1" : 10,
+#     "book_2": 200,
+#     "book_3" : 500
+# }
+
+# print(books_page["book_1"])
+
+# users = [
+#     {
+#         "user_name" : "alireza",
+#         "age": 18,
+#     },
+#     {
+#         "user_name" : "shahin",
+#         "age": 25,
+#     },
+#     {
+#         "user_name" : "reza",
+#         "age": 12,
+#     }
+# ]
+
+# for user in users:
+#     show_info = f"""
+
+#         ________________
+        
+#         username : {user["user_name"]}
+#         age : {user["age"]}
+#         ________________
+    
+#     """
+    
+#     print(show_info)
+
+
+# books_page = {
+#     "book_1" : 10,
+#     "book_2": 200,
+#     "book_1" : 500
+# }
+
+
+# get_user_book = input("Enter Your Book : ")
+
+# if books_page.get(get_user_book, "nfound") != "nfound":
+#     print("found")
+# else: 
+#     print("not found")
+
+# print(books_page["book_1"])
