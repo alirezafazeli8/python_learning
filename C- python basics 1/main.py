@@ -1066,3 +1066,79 @@
 #     print("not found")
 
 # print(books_page["book_1"])
+
+# students = dict(name="alireza", age=18)
+# print(students)
+
+# books_page = {
+#     "book_1" : 10,
+#     "book_2": 200,
+#     "book_3" : 500
+# }
+
+# print("book_4" in books_page)
+# book_keys = books_page.keys()
+
+# for i in books_page.keys():
+#     print(F'my keys : {i}')
+
+# print(books_page.values())
+# print(books_page.items())
+# books_page.clear()
+
+# print(books_page)
+
+# books_page = {
+#     "book_1" : 10,
+#     "book_2": 200,
+#     "book_3" : 500
+# }
+
+# books_page_2 = books_page.copy()
+
+# books_page_2["books_3"] = 800
+
+
+# print(books_page)
+# print(books_page_2)
+
+# books_page.popitem()
+
+# print(books_page)
+
+# books_page.update({"age": 18})
+# books_page.update({"book_1": 300})
+# print(books_page)
+
+# tuple is immutable
+# my_tuple = (1, 2, 3, 4)
+
+# print(my_tuple[0])
+# print(4 in my_tuple)
+
+# users = {
+#     (1, 2) : "1",
+#     (1, 2) : "2"
+# }
+
+# print(users[(1, 2)])
+
+
+# my_list = [1, 2, 3, 3, 5, 5]
+# convert_to_unique_value = set(my_list)
+# print(convert_to_unique_value)
+
+
+school_one = {"alireza", "sara"}
+school_two = {"mohsen", "sarina", "mohammad", "javad"}
+
+# print(school_one.difference(school_two))
+# school_one.discard("alireza")
+
+# print(school_one)
+
+# print(school_one.isdisjoint(school_two))
+# new_school = school_two.union(school_one)
+new_school = school_one | school_two
+
+print(new_school)
