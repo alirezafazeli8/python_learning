@@ -1,0 +1,11 @@
+1- whats python and why python
+2- command line basics in windows
+    - cd
+    - dir
+    - cd ..
+    - cls
+3- anaconda
+4- jupyter notebook
+5- 
+
+
