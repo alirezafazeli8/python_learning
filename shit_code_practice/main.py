@@ -22,9 +22,6 @@
 # print(f"c : {id(c)}")
 
 
-from typing import Any
-
-
 names = ["alireza", "sara", "mohsen", "javad"]
 user_info  = {
     "name": "alireza",
@@ -164,51 +161,51 @@ user_info  = {
 # Car.can_drive(15)
 
 
-class User:
-    def __init__(self, username, age):
-        if age >= 18:
-            self.username = username
-            self.age = age
-        else:
-            print("You Cant Play My Game.")
-    def sign_in(self):
-        print("User is Signed in.")
+# class User:
+#     def __init__(self, username, age):
+#         if age >= 18:
+#             self.username = username
+#             self.age = age
+#         else:
+#             print("You Cant Play My Game.")
+#     def sign_in(self):
+#         print("User is Signed in.")
         
             
-class Wizard(User):
-    def __init__(self, username, wizard_name, ability):
-        User.username = username
-        self.wizard_name = wizard_name
-        self.ability = ability
+# class Wizard(User):
+#     def __init__(self, username, wizard_name, ability):
+#         User.username = username
+#         self.wizard_name = wizard_name
+#         self.ability = ability
         
-    def sign_in(self):
-        super().sign_in()
+#     def sign_in(self):
+#         super().sign_in()
     
-        print(f"User {self.wizard_name} is signed in.")
+#         print(f"User {self.wizard_name} is signed in.")
     
-    def attack(self):
-        return f"{self.wizard_name} attakced with {self.ability}"
+#     def attack(self):
+#         return f"{self.wizard_name} attakced with {self.ability}"
 
 
-class Archer(User):
-    def __init__(self, archer_name, ability):
-        self.archer_name = archer_name
-        self.ability = ability
+# class Archer(User):
+#     def __init__(self, archer_name, ability):
+#         self.archer_name = archer_name
+#         self.ability = ability
         
-    def attack(self):
-        return f"{self.archer_name} attakced with {self.ability}"
+#     def attack(self):
+#         return f"{self.archer_name} attakced with {self.ability}"
         
         
         
-class Jungler(Wizard, Archer):
-    def __init__(self, username, wizard_name, ability):
-        Archer.__init__(self, wizard_name, ability)
-        Wizard.__init__(self, username, wizard_name, ability)
+# class Jungler(Wizard, Archer):
+#     def __init__(self, username, wizard_name, ability):
+#         Archer.__init__(self, wizard_name, ability)
+#         Wizard.__init__(self, username, wizard_name, ability)
 
 
-jungler_one = Jungler("alirezafazeli", "Jungler", "speaking")
+# jungler_one = Jungler("alirezafazeli", "Jungler", "speaking")
 
-print(jungler_one.attack())
+# print(jungler_one.attack())
 
 
 # user_one = User("alirezafazeli", 18)
@@ -257,3 +254,51 @@ print(jungler_one.attack())
 
 # print(issubclass(Toy, User))
 
+# num_one = 10
+
+# def multiple(num):
+#     return num * 2
+
+# print(multiple(2))
+
+numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+# # for i, num in enumerate(numbers):
+# #     numbers[i] = num * 2
+    
+# # print(numbers)
+
+
+# # numbers = list(map(lambda i: i  *2, numbers))
+# numbers = list(filter(lambda i: i % 2 == 0, numbers))
+# print(numbers)
+
+# from functools import reduce
+
+
+# def reduce_func(acc, item):
+#     print(acc, item)
+#     return acc + item
+
+# print(reduce(reduce_func, numbers, 0))
+
+# a = [(0, 2), (4, 3), (9, 9), (10, -1)]
+
+# a.sort(key=lambda key: key[1])
+
+# print(a)
+
+letter = [char + "😊" for char in "alirezafazeli"]
+
+print(letter)
+
+letter_set = {char for char in "alirezafazeli"}
+
+simple_dict = {
+    "a": 1,
+    "b": 2
+}
+
+
+new_dict = {key:value**2 for key,value in simple_dict.items()}
+print(new_dict)
