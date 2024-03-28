@@ -288,17 +288,91 @@ numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
 # print(a)
 
-letter = [char + "😊" for char in "alirezafazeli"]
+# letter = [char + "😊" for char in "alirezafazeli"]
 
-print(letter)
+# print(letter)
 
-letter_set = {char for char in "alirezafazeli"}
+# letter_set = {char for char in "alirezafazeli"}
 
-simple_dict = {
-    "a": 1,
-    "b": 2
-}
+# simple_dict = {
+#     "a": 1,
+#     "b": 2
+# }
 
 
-new_dict = {key:value**2 for key,value in simple_dict.items()}
-print(new_dict)
+# new_dict = {key:value**2 for key,value in simple_dict.items()}
+# print(new_dict)
+
+
+# def my_decorator(func):
+#     def wrapper(name):
+#         print("---------greeet----------")
+        
+#         print(func(name))
+        
+#         print("---------greeet----------")
+        
+#     return wrapper
+
+# @my_decorator
+# def greet(name):
+#     return f"Hello {name}"
+
+# greet("alireza")
+
+
+
+# def timed(func):
+#     def wrapper(range_num):
+#         import time
+
+#         start = time.time()
+    
+#         func(range_num)
+
+#         end = time.time()
+
+#         duration = end - start 
+
+#         print(f"{duration:.3f}sec time taked")
+    
+#     return wrapper
+
+
+# @timed
+# def multiple_number(range_num):
+#     for num in range(range_num):
+#         num = num**num
+#         print(num)
+#         print()
+
+
+# multiple_number(500)
+
+# while True:
+#     try:
+#         age = int(input("Enter Age  : "))
+#         print(f"You are {age}")
+#     except:
+#         print("Pleas Enter Number Bro.")
+#     else:
+#         break
+
+try:
+    age = int(input("Enter Age  : "))
+    if age < 18:
+        raise ValueError("You are less then 18")
+    else: 
+        print(f"You are born in {2024 / age }")
+    
+except ValueError as vl_err:
+    print(f"Pleas Enter INT | {vl_err}")
+except ZeroDivisionError:
+    print("Pleas Enter Correct Age. Not Zero.")
+except:
+    print("You Got error")
+else:
+    print("GoodLuck")
+finally:
+    print("Finally is everywhere")
+
