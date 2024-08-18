@@ -345,3 +345,236 @@
 # print(my_set2)
 
 # print(my_set.union(my_set2))
+
+# age = 17
+
+# if age >= 18 and age <= 60:
+#     print("You can drive")
+# elif age > 60:
+#     print("You license is over.")
+# else:
+#     print("you cant drive")
+
+# user_license = True
+
+# if user_license:
+#     print("You can drive")
+# else:
+#     print("You cant drive")
+
+# print(bool(0))
+# print(bool([]))
+# print(bool({}))
+# print(bool(()))
+# print(bool(""))
+
+# if {}:
+#     print("You have set")
+# else:
+#     print("Your set is empty")
+
+# register user website
+# username = ""
+# password = "dasd"
+
+# if username and password:
+#     print("you are register")
+# else:
+#     print("Your username or password is empty")
+
+# married = False
+# msg_server = "You are in rel" if married else "You are single"
+# print(msg_server)
+
+
+# print(not True)
+# print(not False)
+
+# a = [1, 2, 3]
+# # b = a.copy()  # memory address is changed
+# b = a
+# print(a is b)
+# print(id(a))
+# print(id(b))
+
+# print()
+# names = ["alireza", "sara", "mohsen", "javad"]
+
+# for item in "names is over":
+#     print(item)
+
+# set_item = {"alireza", "alireza", "sara", "mohsen"}
+# tuple_item = (1, 2, 4)
+# dict_item = {"name": "alireza", "age": 19}
+
+# for key, value in dict_item.items():
+#     print(key, value)
+
+
+# for i in range(1000000, 20000000, 2):
+#     print(f"Hello World {i}")
+
+# user_input = int(input("Enter Your Number : "))
+
+# for item in range(user_input):
+#     print(f"rocket {item + 1} is fired")
+
+# for item in range(100, 1, -1):
+#     print(item)
+
+my_set = {1, 2, 3}
+my_tuple = ("a", "b", "c")
+my_dict = {"first_name": "alireza", "last_name": "fazeli"}
+my_list = [1, 2, 3]
+
+
+# user_index = str(input("what item : "))
+# find_index = None
+
+# for index, item in enumerate(my_tuple):
+#     if item == user_index:
+#         find_index = index
+#         print(find_index)
+
+# if not find_index:
+#     print("Not Found !")
+
+# i = 0
+# while i <= 10:
+#     print(i)
+#     i += 1
+# else:
+#     print("correct")
+
+
+# def custom_user_input(msg):
+#     user_select = int(input(msg))
+#     return user_select
+
+
+# user_select = custom_user_input(
+#     """
+#                         enter 1 register
+#                         enter 2 login
+#                         enter 0 exit
+
+#                         """
+# )
+
+# while user_select > 2:
+#     user_select = custom_user_input("Enter Correct Number ! : ")
+# else:
+#     if user_select == 1:
+#         print("You are registered .")
+#     elif user_select == 2:
+#         print("You are logged in.")
+#     else:
+#         print("You Exit")
+
+# i = 0
+# while i < len(my_list):
+#     print(my_list[i])
+#     i += 1
+
+# while True:
+#     user_input = input("Enter Something : ")
+
+#     if user_input:
+#         print(user_input)
+#         break
+
+# import random
+
+# random_number = []
+
+# while True:
+#     if len(random_number) < 10:
+#         computer_choice = random.randint(1, 10)
+
+#         if random_number.count(computer_choice) < 1:
+#             random_number.append(computer_choice)
+
+#     else:
+#         break
+
+# while True:
+
+#     # random computer choice
+#     computer_choice = random.choice(random_number)
+
+#     if len(random_number) == 1:
+#         computer_choice = random.randint(1, 10)
+
+#     print(computer_choice)
+
+#     user_input = int(input("Enter Number : "))
+
+#     if computer_choice == user_input:
+#         print("You Lose !")
+#         break
+#     else:
+#         if not user_input in random_number:
+#             print("Enter Number From List.")
+#         else:
+#             random_number.remove(user_input)
+
+#     print(random_number)
+
+#     if len(random_number) == 0:
+#         print("You Win !")
+#         break
+
+# numbers = [1, 2, 3]
+
+# for item in numbers:
+#     if item == 2:
+#         continue
+#     else:
+#         print(item)
+
+
+def msg(firstname="None", lastname="None"):
+    """
+    msg from server
+    """
+    print(f"hi {firstname} {lastname}", sep="-")
+
+
+# msg(firstname="alrieza", lastname="fazeli")
+# msg()
+
+# print(help(msg))
+# print(help(print))
+
+# # for formatting a date
+# print("09", "12", "2024", sep="-")
+
+# # another example
+# print("Fazeli", "Tech", sep="@")
+
+# print(print.__doc__)
+
+
+# def users_names(*args):
+#     for item in args:
+#         print(f" {item} added to shoping cart ")
+
+
+# users_names("apple", "pineapple", "banana", "dragon fruite")
+
+
+def user_info(**kwargs):
+
+    if not kwargs.get("lastname"):
+        kwargs["lastname"] = "not"
+
+    print(
+        f"""
+            {kwargs["firstname"]}
+            {kwargs["lastname"]}
+          """
+    )
+    # print(kwargs["firstname"])
+
+
+user_info(firstname="alex")
