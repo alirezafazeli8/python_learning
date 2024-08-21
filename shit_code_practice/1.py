@@ -533,11 +533,11 @@ my_list = [1, 2, 3]
 #         print(item)
 
 
-def msg(firstname="None", lastname="None"):
-    """
-    msg from server
-    """
-    print(f"hi {firstname} {lastname}", sep="-")
+# def msg(firstname="None", lastname="None"):
+#     """
+#     msg from server
+#     """
+#     print(f"hi {firstname} {lastname}", sep="-")
 
 
 # msg(firstname="alrieza", lastname="fazeli")
@@ -563,18 +563,475 @@ def msg(firstname="None", lastname="None"):
 # users_names("apple", "pineapple", "banana", "dragon fruite")
 
 
-def user_info(**kwargs):
+# def user_info(**kwargs):
 
-    if not kwargs.get("lastname"):
-        kwargs["lastname"] = "not"
+#     if not kwargs.get("lastname"):
+#         kwargs["lastname"] = "not"
 
-    print(
-        f"""
-            {kwargs["firstname"]}
-            {kwargs["lastname"]}
-          """
-    )
-    # print(kwargs["firstname"])
+#     print(
+#         f"""
+#             {kwargs["firstname"]}
+#             {kwargs["lastname"]}
+#           """
+#     )
+#     # print(kwargs["firstname"])
 
 
-user_info(firstname="alex")
+# user_info(firstname="alex")
+
+
+# def test(**kwargs):
+#     try:
+#         print(kwargs["firstname"])
+#         print(kwargs["lastname"])
+#     except:
+#         print("Error! Pleas Enter Right Fill")
+
+
+# test(firstname="alireza", lastname="fazeli")
+
+# n = "aaaaaaaaaaaaaaaaaaaaaaaaaaa"
+
+
+# if length := len(n) > 10:
+#     print(f"its to long. length is {length}")
+
+# a = 10
+
+
+# def test():
+#     b = 20
+#     print(a)
+#     print(b)
+
+
+# test()
+
+# total = 100
+
+
+# def super_func():
+#     global total
+
+#     total += 1
+
+#     return total
+
+
+# print(super_func())
+
+# print(total)
+
+# if True:
+#     x = 10
+
+# print(x)
+
+# total = 100
+
+
+# def test_func(total):
+#     total += 1
+#     return total
+
+
+# print(test_func(test_func(test_func(test_func(test_func(total))))))
+
+# y = "global in "
+
+
+# def outer():
+#     # global y
+#     x = "local"
+#     y = "global"
+
+#     def inner():
+#         # nonlocal x
+
+#         x = "nonlocal"
+#         print("inner : ", x)
+
+#     inner()
+
+#     print("outer : ", x)
+#     print(y)
+
+
+# outer()
+# print(y)
+
+# name = "           alireza            "
+# name = name.strip()
+# print(name)
+
+# print(type(print))
+# print(type("hi"))
+
+
+# class Car:
+#     pass
+
+
+# benz = Car()
+# bmw = Car()
+
+# print(type(benz))
+# print(type(bmw))
+
+
+# class PlayerCharacter:
+#     def __init__(self, name, id, ability):
+#         self.name = name
+#         self.id = id
+#         self.ability = ability
+
+#     def fire(self):
+#         return f"{self.name}-{self.id} is used {self.ability}"
+
+
+# player1 = PlayerCharacter("Jonson", 213123213, "fire")
+# player2 = PlayerCharacter("alireza", 232, "gun")
+# player3 = PlayerCharacter("Javad", 458, "knife")
+
+# print(player1.fire())
+# print(player2.fire())
+# print(player3.fire())
+
+# player1.attack_speed = 20
+
+# print(player1.attack_speed)
+
+
+# class PlayerCharacter:
+
+#     membership = True
+
+#     def __init__(self, name="test user", age=18):
+
+#         if PlayerCharacter.membership:
+#             self.name = name
+#             PlayerCharacter.age = age
+#         else:
+#             print("Buy Membership")
+
+#     def run(self):
+#         return f"{self.name} is running"
+
+
+# player1 = PlayerCharacter()
+# player1.membership = True
+# print(player1.run())
+
+
+# class Cat:
+
+#     species = "meat"
+
+#     def __init__(self, name, age):
+#         self.name = name
+#         self.age = age
+
+#     @classmethod
+#     def about_cats(cls):
+#         return """
+#             cats are the beautiful animal
+#             in the world, we can see.
+
+#     """
+
+#     @classmethod
+#     def sum(cls, num1, num2):
+#         return num1 + num2
+
+
+# cat1 = Cat("james", 2)
+# cat2 = Cat("rocky", 1)
+# cat3 = Cat("woofi", 3)
+
+# print(Cat.about_cats())
+# print(Cat.sum(1, 2))
+
+
+# def find_oldest_cat(*args):
+#     cats = []
+#     cat_age = []
+#     for cat in args:
+#         cats.append({"name": cat.name, "age": cat.age})
+
+#     for cat in cats:
+#         cat_age.append(cat["age"])
+
+#     oldest = max(cat_age)
+
+#     for cat in cats:
+#         if cat["age"] == oldest:
+#             print(cat)
+
+
+# find_oldest_cat(cat1, cat2, cat3)
+
+
+# class Car:
+
+#     new_items = []
+
+#     def __init__(self, name, color):
+#         self.name = name
+#         self.color = color
+#         Car.new_items.append(self)
+
+#     @classmethod
+#     def can_i_drive(cls, age):
+#         if age >= 18:
+#             print(len(Car.new_items))
+#         else:
+#             return "You cant drive"
+
+#     # @classmethod
+#     # def car_info(cls):
+#     #     return f"{cls.name} {cls.color}"
+
+
+# car1 = Car("benz", "red")
+# car2 = Car("bmw", "red")
+
+# Car.can_i_drive(18)
+
+# car1 = Car
+
+
+# class Car:
+#     def __init__(self, name, color):
+#         self.name = name
+#         self.color = color
+
+#     def car_info(self):
+#         return f"{self.name}-{self.color}"
+
+#     @classmethod
+#     def can_i_drive(cls, name, color, age):
+#         user_car = cls(name, color)
+
+#         if age >= 18:
+#             return f"You can drive with | {user_car.car_info()}"
+#         else:
+#             return f"You cant drive with | {user_car.car_info()}"
+
+
+# print(Car.can_i_drive("benz", "red", 17))
+
+
+# class Cat:
+#     _names = "alireza"
+
+#     def __init__(self, name):
+#         self._name = name
+
+#     @staticmethod
+#     def cat_info():
+#         return Cat.name
+
+
+# cat1 = Cat("sara")
+# cat1._names = "rock"
+# print(cat1._names)
+
+# print(Cat.cat_info())
+
+
+# class User:
+#     def __init__(self, user_name):
+#         self.user_name = user_name
+
+#     def sign_in(self):
+#         return f"{self.user_name} is sign in."
+
+
+# class Archer(User):
+#     def __init__(self, user_name, arrow):
+#         super().__init__(user_name)
+#         self.arrow = arrow
+
+#     def attack(self):
+#         return f"{self.user_name} is attacking. {self.arrow}-arrow left"
+
+
+# archer = Archer("james", 18)
+# print(archer.sign_in())
+# print(archer.attack())
+
+# print(isinstance(archer, object))
+# print(isinstance(Archer, object))
+
+
+# class Cat:
+#     def __init__(self, name):
+#         self.name = name
+
+#     @classmethod
+#     def call_cat(cls, name):
+#         new_cat = cls(name)
+#         return f"{new_cat.name} say Meow"
+
+
+# print(Cat.call_cat("Rocky"))  # output : Rocky say Meow
+
+
+# class Car:
+#     def __init__(self, name, color):
+#         self.name = name
+#         self.color = color
+
+#     @staticmethod
+#     def can_i_drive(age):
+#         if age >= 18:
+#             print("You can drive.")
+#         else:
+#             print("You can't drive.")
+
+
+# Car.can_i_drive(18)  # output : You can drive.
+# Car.can_i_drive(16)  # output : You can't drive.
+
+
+class Vehicle:
+    def __init__(self, brand, model):
+        self.brand = brand
+        self.model = model
+
+
+class Car(Vehicle):
+    def move(self):
+        print(f"{self.brand}-{self.model} Drive")
+
+
+class Boat(Vehicle):
+    def move(self):
+        print(f"{self.brand}-{self.model} Sail")
+
+
+class Plane(Vehicle):
+    def __init__(self, model, brand, age):
+        # Vehicle.__init__(self, model, brand)
+        super().__init__(model, brand)
+        self.age = age
+
+    def move(self):
+        print(f"{self.brand}-{self.model} Flay")
+
+
+# # car = Car("Benz", "AMG")
+# # car.move()
+
+# # boat = Boat("bmw", "boat34")
+# # boat.move()
+
+# plane = Plane("air boss", "747", 19)
+# plane.move()
+
+# print(dir(Plane))
+
+
+# def test():
+#     """ "
+#     test def
+#     """
+
+
+# print(test.__str__)
+
+# x = 19
+# x = x.__str__()
+
+# print(type(x))
+
+# print("asdsadad".__len__())
+
+# # del x
+
+# # print(x)
+
+
+# def special_get(item, index):
+#     return item.__getitem__(index)
+
+
+# a = [1, 2, 3]
+
+# print(special_get(a, 1))
+
+
+# class Toy:
+#     def __init__(self, name, color):
+#         self.name = name
+#         self.color = color
+#         self.item = {"name": "alireza", "age": "age"}
+
+#     def __str__(self):
+#         return "this is special toy"
+
+#     def __len__(self):
+#         return 0
+
+#     def __del__(self):
+#         print("deleted")
+
+#     def __call__(self):
+#         return "function called"
+
+#     def __getitem__(self, item):
+#         return self.item[item]
+
+
+# toy1 = Toy("car", "red")
+# print(str(toy1))
+# print(len(toy1))
+# del Toy
+# print(toy1())
+# print(toy1["name"])
+
+
+class User:
+    def sign_in(self):
+        print("User is Sign in")
+
+
+class Wizard(User):
+    def __init__(self, name, power, fire_count):
+        self.name = name
+        self.power = power
+        self.fire_count = fire_count
+
+    def ability(self):
+        print(
+            f"{self.name} is attacking with {self.power}. fire {self.fire_count}-left"
+        )
+
+
+class Archer(User):
+    def __init__(self, name, power, arrow_left):
+        self.name = name
+        self.power = power
+        self.arrow_left = arrow_left
+
+    def ability(self):
+        print(f"{self.name} is attacking with {self.power}. {self.arrow_left}-left")
+
+
+class Jungler(Wizard, Archer):
+    def __init__(self, name, power, fire_count, arrow_left):
+        Wizard.__init__(self, name, power, fire_count)
+
+        Archer.__init__(self, name, power, arrow_left=arrow_left)
+
+    def ability(self):
+        return super().ability()
+
+
+# wizard1 = Wizard("alireza12", "fire", 15)
+# wizard1.sign_in()
+# wizard1.ability()
+
+jungler1 = Jungler("alireza", "knife", 18, 25)
+
+jungler1.ability()
