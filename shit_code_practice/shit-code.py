@@ -991,47 +991,167 @@ class Plane(Vehicle):
 # print(toy1["name"])
 
 
-class User:
-    def sign_in(self):
-        print("User is Sign in")
+# class User:
+#     def sign_in(self):
+#         print("User is Sign in")
 
 
-class Wizard(User):
-    def __init__(self, name, power, fire_count):
-        self.name = name
-        self.power = power
-        self.fire_count = fire_count
+# class Wizard(User):
+#     def __init__(self, name, power, fire_count):
+#         self.name = name
+#         self.power = power
+#         self.fire_count = fire_count
 
-    def ability(self):
-        print(
-            f"{self.name} is attacking with {self.power}. fire {self.fire_count}-left"
-        )
-
-
-class Archer(User):
-    def __init__(self, name, power, arrow_left):
-        self.name = name
-        self.power = power
-        self.arrow_left = arrow_left
-
-    def ability(self):
-        print(f"{self.name} is attacking with {self.power}. {self.arrow_left}-left")
+#     def ability(self):
+#         print(
+#             f"{self.name} is attacking with {self.power}. fire {self.fire_count}-left"
+#         )
 
 
-class Jungler(Wizard, Archer):
-    def __init__(self, name, power, fire_count, arrow_left):
-        Wizard.__init__(self, name, power, fire_count)
+# class Archer(User):
+#     def __init__(self, name, power, arrow_left):
+#         self.name = name
+#         self.power = power
+#         self.arrow_left = arrow_left
 
-        Archer.__init__(self, name, power, arrow_left=arrow_left)
+#     def ability(self):
+#         print(f"{self.name} is attacking with {self.power}. {self.arrow_left}-left")
 
-    def ability(self):
-        return super().ability()
+
+# class Jungler(Wizard, Archer):
+#     def __init__(self, name, power, fire_count, arrow_left):
+#         Wizard.__init__(self, name, power, fire_count)
+
+#         Archer.__init__(self, name, power, arrow_left=arrow_left)
+
+#     def ability(self):
+#         return super().ability()
 
 
 # wizard1 = Wizard("alireza12", "fire", 15)
 # wizard1.sign_in()
 # wizard1.ability()
 
-jungler1 = Jungler("alireza", "knife", 18, 25)
+# jungler1 = Jungler("alireza", "knife", 18, 25)
 
-jungler1.ability()
+# jungler1.ability()
+
+# x = 10
+
+
+# # pure function
+# def sum_num(a, b):
+#     global x
+#     x = 11
+
+
+# sum_num(1, 1)
+# print(x)
+
+
+# def multiple(item):
+#     return item * 2
+
+
+# nums = [1, 2, 3, 4]
+
+# x = list(map(multiple, nums))
+
+# print(x)
+
+
+# def capitalize_name(item):
+#     return item.capitalize()
+
+
+# new_name = list(map(capitalize_name, ["alireza", "saman", "reza"]))
+
+# print(new_name)
+
+
+# def fun(item):
+#     letter = ["alireza", "sassan", "jamal"]
+
+#     # for name in letter:
+#     #     if name == item:
+#     #         return True
+
+#     if item in letter:
+#         return True
+#     else:
+#         return False
+
+
+# names = ["reza", "javad", "alireza", "jamal"]
+
+# print(list(filter(fun, names)))
+
+# stocks = ["google", "Microsoft", "Apple"]
+# price = [1.3, 2000, 5]
+
+# complete_list = []
+
+# i = 0
+# while i < len(stocks):
+
+#     complete_list.append([stocks[i], price[i]])
+
+#     i += 1
+
+# print(complete_list)
+
+# print(list(zip(stocks, price)))
+
+from functools import reduce
+
+# list_number = [(2, 3), (7, 1), (6, 2)]
+
+# # print(list(map(lambda num: num * 2, list_number)))
+
+# list_number.sort(key=lambda num: num[1])
+
+# print(list_number)
+
+
+# def reduce_sum(a, b):
+#     return a + b
+
+
+# print(reduce(reduce_sum, list_number))
+
+# print(reduce(lambda a, b: a + b, list_number))
+
+# lam_text = lambda a: a
+
+# print(lam_text("Hello World"))
+
+# check_str = lambda text: (
+#     "this is str" if isinstance(text, str) else "pleas enter str param"
+# )
+
+# print(check_str(22))
+
+
+# num_list = [[7, 8], [3, 1], [5, 4], [1, 9]]
+
+# num_list.sort(key=lambda num: num[1])
+
+# print(num_list)
+
+# x = [char for char in "alireza fazeli"]
+# print(x)
+
+# y = [num * 2 for num in range(1, 20) if num % 2 == 0]
+# print(y)
+
+# simple_dict = {
+#     "a"
+# }
+
+x = {key: value for key, value in {"salam": "hi"}.items()}
+
+print(x)
+
+some_list = ["a", "b", "c", "b", "d", "m", "n", "n"]
+
+print(list({item for item in some_list}))
