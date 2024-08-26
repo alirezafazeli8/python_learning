@@ -1148,10 +1148,188 @@ from functools import reduce
 #     "a"
 # }
 
-x = {key: value for key, value in {"salam": "hi"}.items()}
+# x = {key: value for key, value in {"salam": "hi"}.items()}
 
-print(x)
+# print(x)
 
-some_list = ["a", "b", "c", "b", "d", "m", "n", "n"]
+# some_list = ["a", "b", "c", "b", "d", "m", "n", "n"]
 
-print(list({item for item in some_list}))
+# print(list({item for item in some_list}))
+
+
+# def greet():
+#     return "greet"
+
+
+# def hello(greet):
+#     print(f"Hello {greet()}")
+
+
+# hello(greet)
+
+
+# def say_hello():
+#     def hello():
+#         print("hello")
+
+#     return hello
+
+
+# say_hello()()
+
+
+# def my_decorator(func):
+#     def wrapper(num):
+#         print("-----wrapper-----")
+#         for i in range(num):
+#             func()
+#         print("-----wrapper-----")
+
+#     return wrapper
+
+
+# @my_decorator(num=100)
+# def greet():
+#     print("greet")
+
+
+# greet()
+
+
+# def msg(func):
+#     def wrapper():
+#         print("----------")
+#         func()
+#         print("----------")
+
+#     return wrapper
+
+
+# def greet():
+#     print("greet")
+
+
+# greet = msg(greet)
+# greet()
+
+# # def msg_dec(func):
+# #     def wrapper():
+# #         print("----msg----")
+# #         func()
+# #         print("----msg----")
+
+# #     return wrapper
+
+
+# # @msg_dec
+# # def msg_dec():
+# #     print("this is msg from server")
+
+
+# # msg_dec()
+
+
+# def my_decorator(*args, **kwargs):
+#     def wrapped_func(func):
+#         print("----------")
+#         print(kwargs["greet1"])
+#         func(*args, **kwargs)
+#         print("----------")
+
+#     return wrapped_func
+
+
+# @my_decorator(greet1="hi")
+# def say_hello(greet="Hi", emoji=":)"):
+#     print(f"{greet}, {emoji}")
+
+
+# say_hello()
+
+
+# def decorator(*args, **kwargs):
+
+#     def wrapper(func):
+#         print(kwargs["greet"])
+#         func()
+#         print(kwargs["emoje"])
+
+#     # returning wrapper function
+#     return wrapper
+
+
+# @decorator(greet="Hi", emoje=":D")
+# def my_func():
+#     print("Inside actual function")
+
+
+# while True:
+#     try:
+#         user_input = int(input("Enter Your Age : ")) / 0
+#     except ValueError:
+#         print("Pleas Enter Number Not Str")
+#     except ZeroDivisionError:
+#         print("pleas Enter greater Than 0")
+#     else:
+#         print(f"Correct Your Number is : {user_input}")
+#         break
+
+
+# def sum(num1, num2):
+#     try:
+#         if isinstance(num1, int) and isinstance(num2, int):
+#             return num1 + num2
+#         else:
+#             raise TypeError
+
+#     except TypeError:
+#         print("Those Should Be Int")
+#     except:
+#         print("Error")
+#     finally:
+#         print("AllRight")
+
+
+# sum("dasdssad", "sdfasdasd")
+# def sum(num1, num2):
+#     try:
+#         return num1 + num2
+#     except TypeError as type_err:
+#         return f"Pleas Enter Int | {type_err}"
+
+
+# print(sum(1, "2"))
+
+# import time as ashghar
+
+# print(ashghar.time())
+
+
+# def sum(num1, num2):
+#     try:
+#         return num1 + num2
+#     except TypeError as type_err:
+#         return f"Your Error is {type_err}"
+#     # finally:
+#     #     return "Correct"
+
+
+# print(sum(2, "asdasd"))
+
+
+# def sum(num1, num2):
+#     try:
+#         if isinstance(num1, int) and isinstance(num2, int):
+#             return num1 + num2
+#         else:
+#             raise TypeError("New Type Error")
+
+#     # except TypeError:
+#     #     print("Those Should Be Int")
+#     finally:
+#         print("AllRight")
+
+
+# sum(1, "sdasd")
+
+# raise TypeError("alireza sayd type error")
