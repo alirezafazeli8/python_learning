@@ -1,27 +1,30 @@
-import utility
+def main():
 
-# import package
-# import shop.shopping_card
-from shop import shopping_card
-from shop.order.order import order
-from shop.order.order_food import order_food, food_speed, max
+    import utility
 
-# using module
-print(utility.divide(6, 2))
-print(utility.multiple(6, 2))
+    # import package
+    # import shop.shopping_card
+    from shop import shopping_card
+    from shop.order.order import order
+    from shop.order.order_food import order_food, food_speed, max
 
-# print(shop.shopping_card)
+    # using module
+    print(utility.divide(6, 2))
+    print(utility.multiple(6, 2))
 
-# buy module from shop package
-# shop.shopping_card.buy("apple", "orange", "banana")
-shopping_card.buy("apple", "orange", "banana")
+    shopping_card.buy("apple", "orange", "banana")
 
-order("sabzi")
-order_food("hamburger")
-food_speed(5)
-max()
+    order("sabzi")
+    order_food("hamburger")
+    food_speed(5)
+    max()
+
+
+def say_hello():
+    print("hello")
+
 
 if __name__ == "__main__":
-    pass
+    main()
 
 # print(dir(utility))
