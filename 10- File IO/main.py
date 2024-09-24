@@ -35,6 +35,11 @@
 #         my_file.write(f"{i + 1}\n")
 
 
-with open("./sad.txt", mode="w") as my_file:
-    for i in range(20, 30):
-        my_file.write(f"{i + 1}\n")
+try:
+    with open("./sad.txt", mode="r") as my_file:
+        for i in range(20, 30):
+            my_file.write(f"{i + 1}\n")
+except FileNotFoundError:
+    print("File Not Found")
+except IOError:
+    print("Operation is failed")
