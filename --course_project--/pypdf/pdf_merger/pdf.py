@@ -3,7 +3,7 @@ from PyPDF2 import PdfMerger
 
 try:
     # read terminal args
-    pdf_lists = [sys.argv[1], sys.argv[2]]
+    pdf_lists = sys.argv[1:]
 
     # create pdf merger object
     pdf_merger = PdfMerger()
@@ -13,8 +13,9 @@ try:
         pdf_merger.append(pdf)
 
     # create new pdf
-    pdf_merger.write("./assets/new_merge_pdf.pdf")
+    pdf_merger.write("../assets/super_pdf.pdf")
     pdf_merger.close()
+    print("Done ! file saved in your computer")
 
 except IndexError:
     print("Pleas type to pdf's file path")
