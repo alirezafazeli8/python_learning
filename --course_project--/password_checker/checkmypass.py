@@ -44,6 +44,8 @@ def main(argSys):
             else:
                 print(f"Yay! ({password}) Never Leaked in Pwned Database ... \n")
 
+    return "...Done!"
+
 
 if __name__ == "__main__":
-    main(sys.argv[1:])
+    sys.exit(main(sys.argv[1:]))
