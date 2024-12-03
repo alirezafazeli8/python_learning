@@ -1,3 +1,4 @@
 #ignore vscode folder
 .vscode
 .env
+env.py
