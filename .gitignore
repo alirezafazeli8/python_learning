@@ -1,3 +1,5 @@
 #ignore vscode folder
 .vscode
 .env
+env.py
+__pycache__
