@@ -1,5 +1,12 @@
 import requests
+from bs4 import BeautifulSoup
 
-virgool = requests.get("https://virgool.io")
+res = requests.get("https://news.ycombinator.com/")
 
-print(virgool.content.index("name"))
+soup = BeautifulSoup(res.text, "html.parser")
+
+# print(soup.body.getText("hours"))
+# print(soup.body.contents)
+# print(soup.body.find_all("div"))
+# print(soup.a)
+# print(soup.find("div"))
