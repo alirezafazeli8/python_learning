@@ -196,9 +196,56 @@
 # print(user_info)
 
 
-numbers = (1, 2, 3, 4, 3, 3, 5)
+# numbers = (1, 2, 3, 4, 3, 3, 5)
 
-# numbers[0] = 2
+# # numbers[0] = 2
 
 
-print(numbers.count(3))
+# print(numbers.count(3))
+
+
+# my_tuple = (1, 2, 3, 2, 2, 2, 6, 3)
+
+# # ordered
+# print(my_tuple[0])
+# print(my_tuple[5])
+
+# print(my_tuple)
+
+# # any objects should be unique
+# my_set = {1, 2, 3, 2, 2, 2, 6, 3}
+
+# print(my_set)
+
+# # print(my_set[0])
+# # print(my_set[5])
+
+# # for item in my_set:
+# #     print(my_set)
+
+# my_set.add("alireza")
+# my_set.add("alireza")
+
+
+# print(my_set)
+
+
+set_one = {
+    1,
+    2,
+    3,
+}
+set_two = {4, 5, 6, 7, 8, 9}
+
+# set_two.discard(9)
+
+# print(set_one.difference(set_two))
+# print(set_two)
+# set_one.difference_update(set_two)
+
+# print(set_one.intersection(set_two))
+# print(set_one.isdisjoint(set_two))
+
+set_three = set_one.union(set_two)
+
+print(set_three)
