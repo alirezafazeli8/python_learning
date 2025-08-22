@@ -301,3 +301,92 @@
 # # doc1.read_document()
 # img1 = ImageReader("img1")
 # img1.read_document()
+
+
+# class User:
+#     def __init__(self, id):
+#         self.id = id
+
+#     def sing_in(self):
+#         print("User Signed In ...")
+
+
+# class Wizard(User):
+#     """
+#     Keyword arguments:
+#     argument -- description
+#     Return: return_description
+#     """
+
+#     def __init__(self, name, ability, id):
+#         # User.__init__(self, id)
+#         super().__init__(id)
+#         self.name = name
+#         self.ability = ability
+
+#     def user_info(self):
+#         print(self.id, self.name, self.ability)
+
+
+# user1 = Wizard("alireza", "fire", 23)
+# user1.user_info()
+
+# print(dir(User))
+
+# print(User.__getstate__(User))
+
+
+# ----- dander methods -------
+# class User:
+#     """
+
+#     helllllooooo
+
+#     """
+
+#     def __init__(self, id):
+#         self.id = id
+
+#     def sing_in(self):
+#         print("User Signed In ...")
+
+#     def __str__(self):
+#         return """
+
+#         this is the magic of alireza
+#     """
+
+#     def __len__(self):
+#         return 88
+
+#     def __del__(self):
+#         print("The application is closed.")
+
+#     def __call__(self, *args, **kwds):
+#         print("Ahhhh, yes dady !")
+
+
+# user1 = User(88)
+
+# print(user1.__str__())
+# print(len(user1))
+
+
+# # del user1
+
+
+# user1()
+
+
+class Sentence:
+    def __init__(self, sentence):
+        self.sentence = sentence
+
+    def __getitem__(self, index):
+        if self.sentence[index]:
+            return f"Your letter is : {self.sentence[index]}"
+
+
+sen1 = Sentence("Hello How Are You ?")
+
+print(sen1[6])
