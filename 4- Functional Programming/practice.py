@@ -44,7 +44,33 @@
 # -------- zip -------
 
 
-names = ["alireza", "mahya", "javad"]
-last_names = ["fazeli", "ghaderi", "dehghan"]
+# names = ["alireza", "mahya", "javad"]
+# last_names = ["fazeli", "ghaderi", "dehghan"]
 
-print(list(zip(names, last_names)))
+# print(list(zip(names, last_names)))
+
+# my_nums = [2, 4, 6, 8]
+
+# print(list(map(lambda item: item * 2, my_nums)))
+
+
+# my_nums = [(9, 8), (6, 4), (0, 1), (3, -1)]
+# my_nums.sort(key=lambda item: item[1])
+# print(my_nums)
+
+
+# my_list = []
+
+# for item in "alireza":
+#     my_list.append(item)
+
+# print(my_list)
+
+
+my_list = [item + "^&" for item in "alireza"]
+print(my_list)
+
+
+# users = [{"name": "alireza", "num": "1"}, {"name": "mahya", "num": "2"}]
+
+# print({(key: value + "*" for key, value in  item ) for item in users})
