@@ -205,30 +205,99 @@
 # practice  : how many instance is created from my class ?
 
 
-class Dog:
+# class Dog:
 
-    dog_count = 0
+#     dog_count = 0
 
-    def __init__(self, name):
-        self.name = name
+#     def __init__(self, name, owner):
+#         self.name = name
+#         self.__owner = owner
 
-        # when everyone python initilize the class you increase the variable
-        Dog.dog_count += 1
+#         # when everyone python initilize the class you increase the variable
+#         Dog.dog_count += 1
 
-    @classmethod
-    def how_many_dog(cls):
-        print(f"{cls.dog_count} dog is here")
+#     @classmethod
+#     def how_many_dog(cls):
+#         print(f"{cls.dog_count} dog is here")
 
-    @staticmethod
-    def dog_owner():
-        print("Dogs owner is alireza")
+#     # @staticmethod
+#     def dog_owner(self):
+#         print(f"Dogs owner is {self.__owner}")
 
 
-dog1 = Dog("max")
-dog2 = Dog("james")
-dog3 = Dog("wox")
+# dog1 = Dog("max", "alireza")
+# dog2 = Dog("james", "saman")
+# dog3 = Dog("wox", "javad")
 
-Dog.how_many_dog()
+# dog1.dog_owner()
+# dog2.dog_owner()
+# dog3.dog_owner()
 
-Dog.dog_owner()
-Dog.dog_owner()
+# Dog.how_many_dog()
+
+
+# dog1.__owner = "jax"
+# dog1.dog_owner()
+# # Dog.dog_owner()
+# # Dog.dog_owner()
+
+
+# ------------ inheritance --------------
+# class User:
+#     @staticmethod
+#     def sign_in():
+#         print("User Logged In")
+
+
+# # game character
+# class Wizard(User):
+#     def __init__(self, name, ability):
+#         self.name = name
+#         self.ability = ability
+
+#     def attack(self):
+#         print(f"{self.name} attacked with {self.ability}")
+
+
+# class Archer(User):
+#     def __init__(self, name, ability):
+#         self.name = name
+#         self.ability = ability
+
+#     def attack(self):
+#         print(f"{self.name} attacked with {self.ability}")
+
+
+# user_one = Wizard("max", "fire")
+# user_one.sign_in()
+# user_one.attack()
+
+# user_two = Archer("Julia", "Peykan")
+# user_two.sign_in()
+# user_two.attack()
+
+
+# print(isinstance(user_one, Wizard))
+# print(isinstance(user_one, User))
+# print(isinstance(user_one, Archer))
+
+# ------------- polymorphism example in python ------------
+
+
+# class DocumentReader:
+#     def __init__(self, name):
+#         self.name = name
+
+#     def read_document(self):
+#         raise NotImplementedError("Pleas Enter Correct Document")
+
+
+# class ImageReader(DocumentReader):
+#     def read_document(self):
+#         print(f"{self.name}.jpg read ...")
+
+
+# # doc1 = DocumentReader("new")
+# # doc1.read_document()
+# img1 = ImageReader("img1")
+# img1.read_document()
