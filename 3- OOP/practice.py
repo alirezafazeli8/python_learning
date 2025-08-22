@@ -176,25 +176,59 @@
 # player1.membership = True
 
 
+# class Dog:
+#     species = "Toole Sag"
+#     # class object attribute
+#     num_dog = 0
+
+#     def __init__(self, name):
+#         self.name = name
+
+#         # class attribute
+#         Dog.num_dog += 1
+
+#     @classmethod
+#     def dog_sound(cls):
+#         print("Hop Hop")
+
+
+# dog1 = Dog("javad")
+# dog2 = Dog("max")
+# dog3 = Dog("hira")
+
+
+# print(Dog.num_dog)
+
+# Dog.dog_sound()
+
+
+# practice  : how many instance is created from my class ?
+
+
 class Dog:
-    species = "Toole Sag"
-    num_dog = 0
+
+    dog_count = 0
 
     def __init__(self, name):
         self.name = name
 
-        Dog.num_dog += 1
+        # when everyone python initilize the class you increase the variable
+        Dog.dog_count += 1
 
     @classmethod
-    def dog_sound(cls):
-        print("Hop Hop")
+    def how_many_dog(cls):
+        print(f"{cls.dog_count} dog is here")
+
+    @staticmethod
+    def dog_owner():
+        print("Dogs owner is alireza")
 
 
-dog1 = Dog("javad")
-dog2 = Dog("max")
-dog3 = Dog("hira")
+dog1 = Dog("max")
+dog2 = Dog("james")
+dog3 = Dog("wox")
 
+Dog.how_many_dog()
 
-print(Dog.num_dog)
-
-Dog.dog_sound()
+Dog.dog_owner()
+Dog.dog_owner()
