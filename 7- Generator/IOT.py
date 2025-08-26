@@ -23,8 +23,7 @@ def consumer(sensors):
         wet = 0
 
         for i in range(10):
-            for item in sensors():
-                sensor_data.append(item)
+            sensor_data.append(next(sensors()))
 
         for item in sensor_data:
             temp += item["temp"]
