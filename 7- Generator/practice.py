@@ -102,22 +102,81 @@
 # print(next(my_school))
 
 
-class NumGen:
-    def __init__(self, first, last):
-        self.first = first
-        self.last = last
-        self.curr = first - 1
+# class NumGen:
+#     def __init__(self, first, last):
+#         self.first = first
+#         self.last = last
+#         self.curr = first - 1
+
+#     def __iter__(self):
+#         return self
+
+#     def __next__(self):
+#         self.curr += 1
+#         if self.curr == self.last:
+#             raise StopIteration
+#         else:
+#             return self.curr
+
+
+# for item in NumGen(5, 10):
+#     print(item)
+
+
+# def gen_number(num):
+#     for i in range(num):
+#         yield i
+
+
+# my_number = gen_number(10)
+
+# print(next(my_number))
+# print(next(my_number))
+# print(next(my_number))
+# print(next(my_number))
+# print(next(my_number))
+# print(next(my_number))
+# print(next(my_number))
+# print(next(my_number))
+# print(next(my_number))
+# print(next(my_number))
+# print(next(my_number))
+
+
+# list1 = iter([1, 2, 3])
+
+# print(next(list1))
+
+
+# ---------- Own Generator ---------
+class num_generators:
+    def __init__(self, num):
+        self.num = num
+
+        self.count = 0
 
     def __iter__(self):
         return self
 
     def __next__(self):
-        self.curr += 1
-        if self.curr == self.last:
-            raise StopIteration
+
+        if self.count < self.num:
+            self.count += 1
+            return self.count
         else:
-            return self.curr
+            raise StopIteration
 
 
-for item in NumGen(5, 10):
-    print(item)
+my_num = num_generators(10)
+
+print(next(my_num))
+print(next(my_num))
+print(next(my_num))
+print(next(my_num))
+print(next(my_num))
+print(next(my_num))
+print(next(my_num))
+print(next(my_num))
+print(next(my_num))
+print(next(my_num))
+print(next(my_num))
