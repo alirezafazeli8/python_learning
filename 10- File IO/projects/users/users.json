@@ -1,0 +1,22 @@
+{
+  "users": [
+    {
+      "username": "alirezafazeli8",
+      "name": "alireza",
+      "last_name": "fazeli",
+      "phone": "12423"
+    },
+    {
+      "username": "mahyagh",
+      "name": "mahya",
+      "last_name": "ghaderi",
+      "phone": "54646"
+    },
+    {
+      "username": "mohammad",
+      "name": "saniei",
+      "last_name": "mohammad",
+      "phone": "53453"
+    }
+  ]
+}
